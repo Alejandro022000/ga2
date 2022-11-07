@@ -12,12 +12,10 @@ int main(int argc, char *argv[]){
     ofstream output(am.get("output"));
     */
     ifstream input("input1.txt");
-    ofstream output("output1.txt");
-    
+    ofstream output("output1.txt");    
 
-    string input_str;
-    //TODO create queue
-
+    string input_str; //equation
+    my_queue queue;  //queue
 
     while (getline(input, input_str)) {
         if(!input_str.empty())
