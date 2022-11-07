@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
     while (getline(input, input_str)) {
         if(!input_str.empty())
         {
-            //TODO check if is valid
+            //TODO check if is validsdas
             //TODO infix to postfix
             //TODO evaluate postfix
             //TODO add to priority queue depending on the solution of the equation(lower number means higer priority)
