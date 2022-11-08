@@ -57,6 +57,8 @@ void my_queue::enqueue(double num, string str) {
 
 void my_queue::print_queue(ofstream &out) {
   if (top == nullptr) {
+    out << "No Valid Expression" << endl;
+    cout << "No Valid Expression" << endl;
     return;
   }
   node *temp = top;
