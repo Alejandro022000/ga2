@@ -157,15 +157,14 @@ int evaluatePostfix(string s) {
   return st.top();
 }
 
-int main(int argc, char *argv[]){    
-    /*
+int main(int argc, char *argv[]){   
     ArgumentManager am(argc, argv);
     ifstream input(am.get("input"));
     ofstream output(am.get("output"));
-    */
+    /*
     ifstream input("input1.txt");
     ofstream output("output1.txt");    
-    
+    */
     string input_str; //equation
     my_queue queue;  //queue
 
@@ -183,7 +182,7 @@ int main(int argc, char *argv[]){
             }
         }      
     }
-    queue.print_queue(output);// output queue to filed
+    queue.print_queue(output);// output queue to file
     
     return 0;
 }
