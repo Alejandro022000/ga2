@@ -81,8 +81,6 @@ int prec(char c) {
     return 0;
 }
 
-
-
 string infixToPostfix(string s) {
   stack<char> st;
   string postfix;
@@ -159,9 +157,7 @@ int evaluatePostfix(string s) {
   return st.top();
 }
 
-
-int main(int argc, char *argv[]){
-    
+int main(int argc, char *argv[]){    
     /*
     ArgumentManager am(argc, argv);
     ifstream input(am.get("input"));
@@ -177,9 +173,7 @@ int main(int argc, char *argv[]){
         input_str.erase(remove(input_str.begin(), input_str.end(), '\n'), input_str.end());
         input_str.erase(remove(input_str.begin(), input_str.end(), '\r'), input_str.end());
 
-        if(!input_str.empty())
-        
-        {                        
+        if(!input_str.empty()){                        
             if (validParenthesis(input_str)){ //check if is valid (validParenthesis)
                 if(!redundantBrackets(input_str)){
                     string infix = infixToPostfix(input_str);// infix to postfix
